@@ -3,12 +3,12 @@ using System.IO;
 
 namespace botStarsSaller
 {
-    internal class Register
+    internal class RegisterGoldenKey
     {
         private const string GoldenKeyFile = "goldenkey.txt";
         public string GoldenKey { get; private set; }
 
-        public Register()
+        public RegisterGoldenKey()
         {
             GoldenKey = GetOrRequestGoldenKey();
         }

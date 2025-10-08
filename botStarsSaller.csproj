@@ -8,10 +8,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="accountTelegram.txt" />
+    <None Remove="clients.txt" />
     <None Remove="goldenkey.txt" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="accountTelegram.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clients.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="goldenkey.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
@@ -19,6 +27,7 @@
 
   <ItemGroup>
     <PackageReference Include="HtmlAgilityPack" Version="1.12.3" />
+    <PackageReference Include="Telegram.Bot" Version="22.7.2" />
     <PackageReference Include="WTelegramClient" Version="4.3.10" />
   </ItemGroup>
 

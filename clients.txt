@@ -1,0 +1,3 @@
+﻿# sessionName;api_id;api_hash;phone_number;active
+session1;27292048;3a0448e004d0f8e50c1e9a213216e967;+79165823873;1
+session2;20814439;0f6ee02fd3a96b954cfd3e6db96fe568;+79933010115;1
